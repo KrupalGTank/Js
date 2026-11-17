@@ -15,3 +15,19 @@ console.log(typeof population);
 let language = "gujarati";
 const mothertoungue = "gujarati";
 // mothertoungue = "hindi";
+
+//4
+population = 1500000000;
+console.log("half population is : ", population / 2);
+
+population++;
+console.log(population);
+
+let finland = 6000000;
+console.log(population >= finland);
+
+let avg = 33000000;
+console.log(population <= avg);
+
+let str = "Portugal is in Europe, and its 11 million people speak portuguese";
+console.log(str);
