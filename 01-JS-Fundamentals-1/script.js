@@ -14,3 +14,6 @@ let kgt;
 console.log(typeof kgt);
 
 console.log(typeof null);
+
+//let is block scoped and var is function scoped.
+//but we should avoid using var.
