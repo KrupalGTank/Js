@@ -87,16 +87,44 @@
 // console.log(Boolean({}));
 // console.log(Boolean(""));
 
-const m = 10;
-if (m) {
-  console.log("Krupal");
+// const m = 10;
+// if (m) {
+//   console.log("Krupal");
+// } else {
+//   console.log("Krishna");
+// }
+
+// let h = 1000000;
+// if (h) {
+//   console.log("height has something.");
+// } else {
+//   console.log("empty h");
+// }
+
+// console.log("5" == 5);
+// console.log(5 == 5);
+// console.log("5" === 5);
+// console.log(5 === 5);
+
+// const age = "18";
+// if (age == 18)
+//   console.log("loose equality operator which perform type coersion");
+
+// if (age === 18)
+//   console.log("strict equality operator which doe not perform type coersion.");
+
+const n = Number(prompt("enter number"));
+console.log(n);
+if (n === 17) {
+  console.log("it is my roll number");
+} else if (n === 8) {
+  console.log("it is my sister's tution roll number.");
+} else if (n === 12) {
+  console.log("it is my sister's school's roll number.");
 } else {
-  console.log("Krishna");
+  console.log("different number.");
 }
 
-let h = 1000000;
-if (h) {
-  console.log("height has something.");
-} else {
-  console.log("empty h");
+if (n !== 17 && n !== 12 && n !== 8) {
+  console.log("why not 17 or 12 or 8.");
 }
