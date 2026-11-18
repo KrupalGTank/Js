@@ -36,16 +36,29 @@
 // const val = x >= y;
 // console.log(val);
 
-const name = "KGT";
-const job = "teacher",
-  birth = 2006,
-  year = 2026;
-const str = "I'm " + name + ", a " + (year - birth) + " year old " + job;
-console.log(str);
+// const name = "KGT";
+// const job = "teacher",
+//   birth = 2006,
+//   year = 2026;
+// const str = "I'm " + name + ", a " + (year - birth) + " year old " + job;
+// console.log(str);
 
-//template literals.
-const str1 = `I'm ${name}, a ${year - birth} year old ${job}`;
-console.log(str1);
+// //template literals.
+// const str1 = `I'm ${name}, a ${year - birth} year old ${job}`;
+// console.log(str1);
 
-const str2 = "hello\ni am krupal\ni am.";
-console.log(str2);
+// const str2 = "hello\ni am krupal\ni am.";
+// console.log(str2);
+
+const age = 18;
+const isold = age >= 18;
+if (isold) {
+  console.log("age is greater than 18, you can drive.");
+} else {
+  console.log("you can't drive");
+}
+const birth = 2006;
+let year = 2026;
+if (year - birth >= 18) {
+  console.log("you are above 18");
+}

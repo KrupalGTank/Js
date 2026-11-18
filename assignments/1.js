@@ -35,3 +35,9 @@ console.log(str);
 //5
 const str1 = `india is in asia and its ${population} population speaks ${language} language`;
 console.log(str1);
+
+//6
+let num = 33000000;
+if (population > num) {
+  console.log(`india's population is ${(population - num) / 2} above average.`);
+}
