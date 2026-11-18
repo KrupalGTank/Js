@@ -31,3 +31,7 @@ console.log(population <= avg);
 
 let str = "Portugal is in Europe, and its 11 million people speak portuguese";
 console.log(str);
+
+//5
+const str1 = `india is in asia and its ${population} population speaks ${language} language`;
+console.log(str1);

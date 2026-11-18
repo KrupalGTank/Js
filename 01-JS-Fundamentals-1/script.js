@@ -17,21 +17,35 @@
 
 //let is block scoped and var is function scoped.
 //but we should avoid using var.
-console.log("my age is " + (2026 - 2006));
-console.log("2 to the power 3 is ", 2 ** 3);
-let x = 10;
-x += 10;
-console.log(x);
-x++;
-console.log(x);
-x--;
-console.log(x);
+// console.log("my age is " + (2026 - 2006));
+// console.log("2 to the power 3 is ", 2 ** 3);
+// let x = 10;
+// x += 10;
+// console.log(x);
+// x++;
+// console.log(x);
+// x--;
+// console.log(x);
 
-let y = 20;
-console.log(x == y);
-y = 10;
-console.log(x >= y);
-console.log(x <= y);
+// let y = 20;
+// console.log(x == y);
+// y = 10;
+// console.log(x >= y);
+// console.log(x <= y);
 
-const val = x >= y;
-console.log(val);
+// const val = x >= y;
+// console.log(val);
+
+const name = "KGT";
+const job = "teacher",
+  birth = 2006,
+  year = 2026;
+const str = "I'm " + name + ", a " + (year - birth) + " year old " + job;
+console.log(str);
+
+//template literals.
+const str1 = `I'm ${name}, a ${year - birth} year old ${job}`;
+console.log(str1);
+
+const str2 = "hello\ni am krupal\ni am.";
+console.log(str2);
