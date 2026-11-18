@@ -50,15 +50,33 @@
 // const str2 = "hello\ni am krupal\ni am.";
 // console.log(str2);
 
-const age = 18;
-const isold = age >= 18;
-if (isold) {
-  console.log("age is greater than 18, you can drive.");
-} else {
-  console.log("you can't drive");
-}
-const birth = 2006;
-let year = 2026;
-if (year - birth >= 18) {
-  console.log("you are above 18");
-}
+// const age = 18;
+// const isold = age >= 18;
+// if (isold) {
+//   console.log("age is greater than 18, you can drive.");
+// } else {
+//   console.log("you can't drive");
+// }
+// const birth = 2006;
+// let year = 2026;
+// if (year - birth >= 18) {
+//   console.log("you are above 18");
+// }
+
+//type conversion
+const year = 2026;
+console.log(Number(year) - 2006);
+console.log(Number("KGT"));
+console.log(typeof NaN);
+//type coercion
+console.log("23" - "10" - 3);
+console.log("23" * "2");
+console.log("12" ** 2);
+
+let n = "1" + 1; //+ leads to convert integer to string. so, ans will be '11'.
+console.log(typeof n);
+n = n - 1; //minus leads to convert string to integer.
+console.log(n);
+console.log(typeof n);
+
+console.log("10" - "5" - "2" - "1" + "0");
