@@ -64,19 +64,39 @@
 // }
 
 //type conversion
-const year = 2026;
-console.log(Number(year) - 2006);
-console.log(Number("KGT"));
-console.log(typeof NaN);
-//type coercion
-console.log("23" - "10" - 3);
-console.log("23" * "2");
-console.log("12" ** 2);
+// const year = 2026;
+// console.log(Number(year) - 2006);
+// console.log(Number("KGT"));
+// console.log(typeof NaN);
+// //type coercion
+// console.log("23" - "10" - 3);
+// console.log("23" * "2");
+// console.log("12" ** 2);
 
-let n = "1" + 1; //+ leads to convert integer to string. so, ans will be '11'.
-console.log(typeof n);
-n = n - 1; //minus leads to convert string to integer.
-console.log(n);
-console.log(typeof n);
+// let n = "1" + 1; //+ leads to convert integer to string. so, ans will be '11'.
+// console.log(typeof n);
+// n = n - 1; //minus leads to convert string to integer.
+// console.log(n);
+// console.log(typeof n);
 
-console.log("10" - "5" - "2" - "1" + "0");
+// console.log("10" - "5" - "2" - "1" + "0");
+
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean("KGT"));
+// console.log(Boolean({}));
+// console.log(Boolean(""));
+
+const m = 10;
+if (m) {
+  console.log("Krupal");
+} else {
+  console.log("Krishna");
+}
+
+let h = 1000000;
+if (h) {
+  console.log("height has something.");
+} else {
+  console.log("empty h");
+}
