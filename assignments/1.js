@@ -50,11 +50,22 @@
 // console.log(5 + 6 + "4" + 9 - 4 - 2); // -> ?
 
 //8
-let n = prompt("enter number of neighbour countries.");
-if (n == 1) {
-  console.log("there is 1 neighbour country");
-} else if (n > 1) {
-  console.log("there is more than 1 neighbour countries.");
+// let n = prompt("enter number of neighbour countries.");
+// if (n == 1) {
+//   console.log("there is 1 neighbour country");
+// } else if (n > 1) {
+//   console.log("there is more than 1 neighbour countries.");
+// } else {
+//   console.log("country has no neighbour.");
+// }
+
+//9
+let l = "english",
+  isisland = false,
+  p = 80000000;
+
+if (l === "english" && isisland === false && p < 50000000) {
+  console.log("india is best fit for you!");
 } else {
-  console.log("country has no neighbour.");
+  console.log("you should look for country other than india.");
 }
