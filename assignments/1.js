@@ -71,24 +71,28 @@
 // }
 
 //10
-let lang = "chinese";
-switch (lang) {
-  case "chinese":
-  case "mandarin":
-    console.log("mosst number of native speakers");
-    break;
-  case "spanish":
-    console.log("2nd place");
-    break;
-  case "english":
-    console.log("third place");
-    break;
-  case "hindi":
-    console.log("4th place");
-    break;
-  case "arabic":
-    console.log("5th most spoken language.");
-    break;
-  default:
-    console.log("great language.");
-}
+// let lang = "chinese";
+// switch (lang) {
+//   case "chinese":
+//   case "mandarin":
+//     console.log("mosst number of native speakers");
+//     break;
+//   case "spanish":
+//     console.log("2nd place");
+//     break;
+//   case "english":
+//     console.log("third place");
+//     break;
+//   case "hindi":
+//     console.log("4th place");
+//     break;
+//   case "arabic":
+//     console.log("5th most spoken language.");
+//     break;
+//   default:
+//     console.log("great language.");
+// }
+
+//ternary operator
+let p = 150;
+p >= 33 ? console.log("above average") : console.log("below average");

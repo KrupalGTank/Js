@@ -130,33 +130,39 @@
 // }
 
 //switch case
-const day = "Saturday";
-switch (day) {
-  case "monday": //day === 'monday'
-    console.log("this is monday");
-    console.log("monday");
-  // break;
-  case "tuesday":
-    console.log("this is tuesday");
-    console.log("tuesday");
-    break;
-  case "wednesday":
-    console.log("this is wednesday");
-    console.log("wednesday");
-    break;
-  case "Thursday":
-    console.log("this is Thursday");
-    console.log("Thursday");
-    break;
-  case "Friday":
-    console.log("this is Friday");
-    console.log("Friday");
-    break;
-  case "Saturday":
-  case "Sunday":
-    console.log("this is saturday or Sunday");
-    console.log("saturday or Sunday");
-    break;
-  default:
-    console.log("no day");
-}
+// const day = "Saturday";
+// switch (day) {
+//   case "monday": //day === 'monday'
+//     console.log("this is monday");
+//     console.log("monday");
+//   // break;
+//   case "tuesday":
+//     console.log("this is tuesday");
+//     console.log("tuesday");
+//     break;
+//   case "wednesday":
+//     console.log("this is wednesday");
+//     console.log("wednesday");
+//     break;
+//   case "Thursday":
+//     console.log("this is Thursday");
+//     console.log("Thursday");
+//     break;
+//   case "Friday":
+//     console.log("this is Friday");
+//     console.log("Friday");
+//     break;
+//   case "Saturday":
+//   case "Sunday":
+//     console.log("this is saturday or Sunday");
+//     console.log("saturday or Sunday");
+//     break;
+//   default:
+//     console.log("no day");
+// }
+
+const age = 18;
+age >= 18 ? console.log(">=18") : console.log("<18");
+
+const drink = age >= 18 ? "soda" : "water";
+console.log(drink);
