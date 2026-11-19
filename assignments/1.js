@@ -94,5 +94,5 @@
 // }
 
 //ternary operator
-let p = 150;
-p >= 33 ? console.log("above average") : console.log("below average");
+// let p = 150;
+// p >= 33 ? console.log("above average") : console.log("below average");
