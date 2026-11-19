@@ -60,12 +60,35 @@
 // }
 
 //9
-let l = "english",
-  isisland = false,
-  p = 80000000;
+// let l = "english",
+//   isisland = false,
+//   p = 80000000;
 
-if (l === "english" && isisland === false && p < 50000000) {
-  console.log("india is best fit for you!");
-} else {
-  console.log("you should look for country other than india.");
+// if (l === "english" && isisland === false && p < 50000000) {
+//   console.log("india is best fit for you!");
+// } else {
+//   console.log("you should look for country other than india.");
+// }
+
+//10
+let lang = "chinese";
+switch (lang) {
+  case "chinese":
+  case "mandarin":
+    console.log("mosst number of native speakers");
+    break;
+  case "spanish":
+    console.log("2nd place");
+    break;
+  case "english":
+    console.log("third place");
+    break;
+  case "hindi":
+    console.log("4th place");
+    break;
+  case "arabic":
+    console.log("5th most spoken language.");
+    break;
+  default:
+    console.log("great language.");
 }

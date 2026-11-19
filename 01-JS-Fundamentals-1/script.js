@@ -113,18 +113,50 @@
 // if (age === 18)
 //   console.log("strict equality operator which doe not perform type coersion.");
 
-const n = Number(prompt("enter number"));
-console.log(n);
-if (n === 17) {
-  console.log("it is my roll number");
-} else if (n === 8) {
-  console.log("it is my sister's tution roll number.");
-} else if (n === 12) {
-  console.log("it is my sister's school's roll number.");
-} else {
-  console.log("different number.");
-}
+// const n = Number(prompt("enter number"));
+// console.log(n);
+// if (n === 17) {
+//   console.log("it is my roll number");
+// } else if (n === 8) {
+//   console.log("it is my sister's tution roll number.");
+// } else if (n === 12) {
+//   console.log("it is my sister's school's roll number.");
+// } else {
+//   console.log("different number.");
+// }
 
-if (n !== 17 && n !== 12 && n !== 8) {
-  console.log("why not 17 or 12 or 8.");
+// if (n !== 17 && n !== 12 && n !== 8) {
+//   console.log("why not 17 or 12 or 8.");
+// }
+
+//switch case
+const day = "Saturday";
+switch (day) {
+  case "monday": //day === 'monday'
+    console.log("this is monday");
+    console.log("monday");
+  // break;
+  case "tuesday":
+    console.log("this is tuesday");
+    console.log("tuesday");
+    break;
+  case "wednesday":
+    console.log("this is wednesday");
+    console.log("wednesday");
+    break;
+  case "Thursday":
+    console.log("this is Thursday");
+    console.log("Thursday");
+    break;
+  case "Friday":
+    console.log("this is Friday");
+    console.log("Friday");
+    break;
+  case "Saturday":
+  case "Sunday":
+    console.log("this is saturday or Sunday");
+    console.log("saturday or Sunday");
+    break;
+  default:
+    console.log("no day");
 }
