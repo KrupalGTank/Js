@@ -54,14 +54,35 @@
 // console.log(name("krupal", "tank"));
 
 //function calling other function
-function cut(fruit) {
-  console.log(`cutting ${fruit}.`);
-}
+// function cut(fruit) {
+//   console.log(`cutting ${fruit}.`);
+// }
 
-function process(apples, oranges) {
-  cut("apples");
-  cut("oranges");
-  return `juice made from ${apples} apples and ${oranges} oranges.`;
-}
+// function process(apples, oranges) {
+//   cut("apples");
+//   cut("oranges");
+//   return `juice made from ${apples} apples and ${oranges} oranges.`;
+// }
 
-console.log(process(10, 15));
+// console.log(process(10, 15));
+
+// let a1 = (p1, p2, p3) => {
+//   return `this is arrow function with 3 parameters : ${p1}, ${p2}, ${p3}`;
+// };
+
+// console.log(a1(1, 2, 3));
+
+//all 3 functions together
+// function fun1(p) {
+//   return p * 10;
+// }
+
+// let fun2 = function (p) {
+//   return p * 10;
+// };
+
+// let fun3 = (p) => {
+//   return p * 10;
+// };
+
+// console.log(fun1(10), fun2(20), fun3(30));
