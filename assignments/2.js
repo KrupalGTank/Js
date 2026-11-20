@@ -21,8 +21,16 @@
 
 // console.log(percentageOfWorld2(150));
 
-// let percentageOfWorld3 = (p) => {
-//   let t = 7900;
-//   return (p / t) * 100;
-// };
+let percentageOfWorld3 = (p) => {
+  let t = 7900;
+  return (p / t) * 100;
+};
 // console.log(percentageOfWorld3(150));
+
+function describePopulation(c, p) {
+  console.log(
+    `the country ${c} has ${p} million population which is ${percentageOfWorld3(p)}% of the world's population.`,
+  );
+}
+
+describePopulation("Bharat", 150);
