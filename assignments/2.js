@@ -8,15 +8,21 @@
 //;
 //  console.log(s1, s2);
 
-function percentageOfWorld1(p) {
-  let t = 7900;
-  return (p / t) * 100;
-}
-console.log(percentageOfWorld1(150));
+// function percentageOfWorld1(p) {
+//   let t = 7900;
+//   return (p / t) * 100;
+// }
+// console.log(percentageOfWorld1(150));
 
-let percentageOfWorld2 = function (p) {
-  let t = 7900;
-  return (p / t) * 100;
-};
+// let percentageOfWorld2 = function (p) {
+//   let t = 7900;
+//   return (p / t) * 100;
+// };
 
-console.log(percentageOfWorld2(150));
+// console.log(percentageOfWorld2(150));
+
+// let percentageOfWorld3 = (p) => {
+//   let t = 7900;
+//   return (p / t) * 100;
+// };
+// console.log(percentageOfWorld3(150));

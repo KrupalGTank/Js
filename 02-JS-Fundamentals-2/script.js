@@ -23,14 +23,32 @@
 // console.log(ans);
 
 //this function is an expression.
-fun();
-const calage = function (birth) {
-  return 2026 - birth;
+// fun();
+// const calage = function (birth) {
+//   return 2026 - birth;
+// };
+
+// function fun() {
+//   console.log("hello");
+// }
+
+// console.log(calage(2006));
+// console.log(calage);
+
+//arrow function
+const age = (birth) => 2026 - birth;
+console.log(age(2006));
+
+const yearuntilretirement = (birth) => {
+  const age = 2026 - birth;
+  const retire = 65 - age;
+  return retire;
 };
 
-function fun() {
-  console.log("hello");
-}
+console.log(yearuntilretirement(2006));
 
-console.log(calage(2006));
-console.log(calage);
+const name = (first, last) => {
+  return `full name is :  ${first} ${last}`;
+};
+
+console.log(name("krupal", "tank"));
