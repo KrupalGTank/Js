@@ -154,3 +154,13 @@ const john = {
 console.log(johnarray);
 console.log(john);
 console.log(john.friends);
+
+//we can retrive elements from object using both dot and bracket notation. but differencce between those is that, in bracket notation, we can actually put any expression we want. whereas in dot notation, we have to use final property name.
+
+console.log(john.name);
+let n = "name";
+console.log(john["sur" + n]);
+john.location = "India";
+console.log(john);
+john["salary"] = 1200000;
+console.log(john);
