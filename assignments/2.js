@@ -82,13 +82,30 @@ let myCountry = {
     "bhutan",
     "china",
   ],
+  describe: function () {
+    return `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`;
+  },
+
+  checkIsland: function () {
+    // if (this.neighbours.length === 0) {
+    //   this.isIsland = true;
+    // } else {
+    //   this.isIsland = false;
+    // }
+    this.neighbours.length === 0
+      ? (this.isIsland = true)
+      : (this.isIsland = false);
+    return this.isIsland;
+  },
 };
 
-console.log(
-  `${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`,
-);
+// console.log(
+//   `${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`,
+// );
 
-myCountry.population += 2;
-console.log(myCountry);
-myCountry["population"] -= 2;
-console.log(myCountry);
+// myCountry.population += 2;
+// console.log(myCountry);
+// myCountry["population"] -= 2;
+// console.log(myCountry);
+console.log(myCountry.describe());
+console.log(myCountry.checkIsland());

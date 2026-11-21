@@ -145,22 +145,31 @@ const johnarray = [
 const john = {
   name: "john",
   surname: "hemswarth",
-  age: 2026 - 1998,
+  birth: 1998,
   profession: "Professor",
   friends: ["nick", "jenet", "remon"],
+  calAge: function () {
+    return 2026 - this.birth;
+  },
+  greet: () => {
+    console.log("Hello John");
+  },
 };
 
 //john is object and it has 5 properties.
-console.log(johnarray);
-console.log(john);
-console.log(john.friends);
+// console.log(johnarray);
+// console.log(john);
+// console.log(john.friends);
 
 //we can retrive elements from object using both dot and bracket notation. but differencce between those is that, in bracket notation, we can actually put any expression we want. whereas in dot notation, we have to use final property name.
 
-console.log(john.name);
-let n = "name";
-console.log(john["sur" + n]);
-john.location = "India";
-console.log(john);
-john["salary"] = 1200000;
-console.log(john);
+// console.log(john.name);
+// let n = "name";
+// console.log(john["sur" + n]);
+// john.location = "India";
+// console.log(john);
+// john["salary"] = 1200000;
+// console.log(john);
+console.log(john.calAge());
+console.log(john["calAge"]());
+john.greet();
