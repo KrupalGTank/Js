@@ -107,5 +107,16 @@ let myCountry = {
 // console.log(myCountry);
 // myCountry["population"] -= 2;
 // console.log(myCountry);
-console.log(myCountry.describe());
-console.log(myCountry.checkIsland());
+// console.log(myCountry.describe());
+// console.log(myCountry.checkIsland());
+
+let pop = [150, 33, 30, 120];
+const percent = (p) => {
+  return p / 79;
+};
+
+let ans = [];
+for (let i = 0; i < pop.length; i++) {
+  ans.push(percent(pop[i]));
+}
+console.log(ans);

@@ -133,28 +133,28 @@
 // //includes check wether element present in array or not using strict equality.
 // console.log(arr.includes("krupal"), arr.includes("Dishant"));
 
-// const johnarray = [
-//   "john",
-//   "hemswarth",
-//   2026 - 1998,
-//   "professor",
-//   ["nick", "jenet", "remon"],
-// ];
+const johnarray = [
+  "john",
+  "hemswarth",
+  2026 - 1998,
+  "professor",
+  ["nick", "jenet", "remon"],
+];
 
 //object literal syntax.
-// const john = {
-//   name: "john",
-//   surname: "hemswarth",
-//   birth: 1998,
-//   profession: "Professor",
-//   friends: ["nick", "jenet", "remon"],
-//   calAge: function () {
-//     return 2026 - this.birth;
-//   },
-//   greet: () => {
-//     console.log("Hello John");
-//   },
-// };
+const john = {
+  name: "john",
+  surname: "hemswarth",
+  birth: 1998,
+  profession: "Professor",
+  friends: ["nick", "jenet", "remon"],
+  calAge: function () {
+    return 2026 - this.birth;
+  },
+  greet: () => {
+    console.log("Hello John");
+  },
+};
 
 //john is object and it has 5 properties.
 // console.log(johnarray);
@@ -175,6 +175,22 @@
 // john.greet();
 
 //loops
-for (let i = 1; i <= 10; i++) {
-  console.log(`17 * ${i} = ${17 * i}`);
+// for (let i = 1; i <= 10; i++) {
+//   console.log(`17 * ${i} = ${17 * i}`);
+// }
+// let types = [];
+// for (let i = 0; i < johnarray.length; i++) {
+//   console.log(johnarray[i]);
+//   types[i] = typeof johnarray[i];
+//   //or
+//   // types.push(typeof johnarray[i]);
+// }
+// console.log(types);
+
+let years = [1998, 1991, 2000, 2006];
+let ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages[i] = 2026 - years[i];
 }
+console.log(ages);
