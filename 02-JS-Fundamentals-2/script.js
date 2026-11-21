@@ -88,24 +88,47 @@
 // console.log(fun1(10), fun2(20), fun3(30));
 
 //arrays
-const friends = ["krishna", "adhya", "shivam", "dishant"];
-console.log(friends);
-console.log(typeof friends);
+// const friends = ["krishna", "adhya", "shivam", "dishant"];
+// console.log(friends);
+// console.log(typeof friends);
 
-const a = new Array(2006, 2003, 2017, 2026);
-console.log(typeof a, a);
+// const a = new Array(2006, 2003, 2017, 2026);
+// console.log(typeof a, a);
 
-console.log(a[0]);
-console.log(friends[1]);
-console.log(friends.length);
+// console.log(a[0]);
+// console.log(friends[1]);
+// console.log(friends.length);
 
-friends[2] = "toral";
-console.log(friends);
-let arr = [1, 2, 3];
+// friends[2] = "toral";
+// console.log(friends);
+// let arr = [1, 2, 3];
+// console.log(arr);
+// arr = [2, 2, 2];
+// console.log(arr);
+
+// const name1 = "KGT";
+// let arr1 = [17, "Krupal", 9.7, name1];
+// console.log(arr1);
+
+const arr = ["krupal", "krishna", "shivam"];
+
+//add elements
+const len = arr.push("Adhya");
+console.log(len);
+
+arr.unshift("Dishant");
 console.log(arr);
-arr = [2, 2, 2];
+
+//remove elements
+let removedElement = arr.pop();
+console.log(arr, removedElement);
+
+arr.shift();
 console.log(arr);
 
-const name1 = "KGT";
-let arr1 = [17, "Krupal", 9.7, name1];
-console.log(arr1);
+//know index of element
+console.log(arr.indexOf("krupal"));
+console.log(arr.indexOf("Dishant"));
+
+//includes check wether element present in array or not using strict equality.
+console.log(arr.includes("krupal"), arr.includes("Dishant"));
