@@ -110,25 +110,47 @@
 // let arr1 = [17, "Krupal", 9.7, name1];
 // console.log(arr1);
 
-const arr = ["krupal", "krishna", "shivam"];
+// const arr = ["krupal", "krishna", "shivam"];
 
-//add elements
-const len = arr.push("Adhya");
-console.log(len);
+// //add elements
+// const len = arr.push("Adhya");
+// console.log(len);
 
-arr.unshift("Dishant");
-console.log(arr);
+// arr.unshift("Dishant");
+// console.log(arr);
 
-//remove elements
-let removedElement = arr.pop();
-console.log(arr, removedElement);
+// //remove elements
+// let removedElement = arr.pop();
+// console.log(arr, removedElement);
 
-arr.shift();
-console.log(arr);
+// arr.shift();
+// console.log(arr);
 
-//know index of element
-console.log(arr.indexOf("krupal"));
-console.log(arr.indexOf("Dishant"));
+// //know index of element
+// console.log(arr.indexOf("krupal"));
+// console.log(arr.indexOf("Dishant"));
 
-//includes check wether element present in array or not using strict equality.
-console.log(arr.includes("krupal"), arr.includes("Dishant"));
+// //includes check wether element present in array or not using strict equality.
+// console.log(arr.includes("krupal"), arr.includes("Dishant"));
+
+const johnarray = [
+  "john",
+  "hemswarth",
+  2026 - 1998,
+  "professor",
+  ["nick", "jenet", "remon"],
+];
+
+//object literal syntax.
+const john = {
+  name: "john",
+  surname: "hemswarth",
+  age: 2026 - 1998,
+  profession: "Professor",
+  friends: ["nick", "jenet", "remon"],
+};
+
+//john is object and it has 5 properties.
+console.log(johnarray);
+console.log(john);
+console.log(john.friends);

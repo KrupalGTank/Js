@@ -46,23 +46,40 @@
 // let arr2 = [percent(arr[0]), percent(arr[1]), percent(arr[2]), percent(arr[3])];
 // console.log(arr2);
 
-let countries = [
-  "lanka",
-  "bhutan",
-  "nepal",
-  "pakistan",
-  "afghanistan",
-  "myanmar",
-  "china",
-];
-console.log(countries);
-countries.push("utopia");
-console.log(countries);
-countries.pop();
-console.log(countries);
-if (countries.includes("germany") === false) {
-  console.log("country is not an europian country.");
-}
+// let countries = [
+//   "lanka",
+//   "bhutan",
+//   "nepal",
+//   "pakistan",
+//   "afghanistan",
+//   "myanmar",
+//   "china",
+// ];
+// console.log(countries);
+// countries.push("utopia");
+// console.log(countries);
+// countries.pop();
+// console.log(countries);
+// if (countries.includes("germany") === false) {
+//   console.log("country is not an europian country.");
+// }
 
-countries[countries.indexOf("lanka")] = "shree lanka";
-console.log(countries);
+// countries[countries.indexOf("lanka")] = "shree lanka";
+// console.log(countries);
+
+//objects
+let myCountry = {
+  country: "Bharat",
+  capital: "Delhi",
+  language: "Hindi",
+  population: 150,
+  neighbours: [
+    "Shri lanka",
+    "pakistan",
+    "afghanistan",
+    "myanmar",
+    "nepal",
+    "bhutan",
+    "china",
+  ],
+};
