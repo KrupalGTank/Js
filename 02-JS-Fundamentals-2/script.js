@@ -133,28 +133,28 @@
 // //includes check wether element present in array or not using strict equality.
 // console.log(arr.includes("krupal"), arr.includes("Dishant"));
 
-const johnarray = [
-  "john",
-  "hemswarth",
-  2026 - 1998,
-  "professor",
-  ["nick", "jenet", "remon"],
-];
+// const johnarray = [
+//   "john",
+//   "hemswarth",
+//   2026 - 1998,
+//   "professor",
+//   ["nick", "jenet", "remon"],
+// ];
 
 //object literal syntax.
-const john = {
-  name: "john",
-  surname: "hemswarth",
-  birth: 1998,
-  profession: "Professor",
-  friends: ["nick", "jenet", "remon"],
-  calAge: function () {
-    return 2026 - this.birth;
-  },
-  greet: () => {
-    console.log("Hello John");
-  },
-};
+// const john = {
+//   name: "john",
+//   surname: "hemswarth",
+//   birth: 1998,
+//   profession: "Professor",
+//   friends: ["nick", "jenet", "remon"],
+//   calAge: function () {
+//     return 2026 - this.birth;
+//   },
+//   greet: () => {
+//     console.log("Hello John");
+//   },
+// };
 
 //john is object and it has 5 properties.
 // console.log(johnarray);
@@ -170,6 +170,11 @@ const john = {
 // console.log(john);
 // john["salary"] = 1200000;
 // console.log(john);
-console.log(john.calAge());
-console.log(john["calAge"]());
-john.greet();
+// console.log(john.calAge());
+// console.log(john["calAge"]());
+// john.greet();
+
+//loops
+for (let i = 1; i <= 10; i++) {
+  console.log(`17 * ${i} = ${17 * i}`);
+}
