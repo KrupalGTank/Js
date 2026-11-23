@@ -194,3 +194,16 @@ for (let i = 0; i < years.length; i++) {
   ages[i] = 2026 - years[i];
 }
 console.log(ages);
+
+//looping backwards.
+for (let i = years.length - 1; i >= 0; i--) {
+  console.log(years[i]);
+}
+//loop inside loop
+for (let i = 18; i <= 19; i++) {
+  console.log("table of ", i);
+  for (let j = 1; j <= 10; j++) {
+    console.log(`${i} * ${j} = ${i * j}`);
+  }
+  console.log("\n");
+}

@@ -110,13 +110,24 @@ let myCountry = {
 // console.log(myCountry.describe());
 // console.log(myCountry.checkIsland());
 
-let pop = [150, 33, 30, 120];
-const percent = (p) => {
-  return p / 79;
-};
+// let pop = [150, 33, 30, 120];
+// const percent = (p) => {
+//   return p / 79;
+// };
 
-let ans = [];
-for (let i = 0; i < pop.length; i++) {
-  ans.push(percent(pop[i]));
+// let ans = [];
+// for (let i = 0; i < pop.length; i++) {
+//   ans.push(percent(pop[i]));
+// }
+// console.log(ans);
+
+//loops in loop
+let arr = [["canada", "mexico"], ["spain"], ["norway", "sweden", "russia"]];
+
+for (let i = 0; i < arr.length; i++) {
+  console.log(`neighbours of country ${i} :- `);
+  for (let j = 0; j < arr[i].length; j++) {
+    console.log(`Neighbour : ${arr[i][j]}`);
+  }
+  console.log();
 }
-console.log(ans);
