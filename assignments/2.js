@@ -122,12 +122,23 @@ let myCountry = {
 // console.log(ans);
 
 //loops in loop
-let arr = [["canada", "mexico"], ["spain"], ["norway", "sweden", "russia"]];
+// let arr = [["canada", "mexico"], ["spain"], ["norway", "sweden", "russia"]];
 
-for (let i = 0; i < arr.length; i++) {
-  console.log(`neighbours of country ${i} :- `);
-  for (let j = 0; j < arr[i].length; j++) {
-    console.log(`Neighbour : ${arr[i][j]}`);
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(`neighbours of country ${i} :- `);
+//   for (let j = 0; j < arr[i].length; j++) {
+//     console.log(`Neighbour : ${arr[i][j]}`);
+//   }
+//   console.log();
+// }
+
+function printForecast(arr) {
+  let str = "... ";
+  for (let i = 0; i < arr.length; i++) {
+    str += arr[i] + "c in " + (i + 1) + " Days ... ";
   }
-  console.log();
+  console.log(str);
 }
+
+let arr = [27, 5, 12];
+printForecast(arr);
