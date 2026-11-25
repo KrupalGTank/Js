@@ -12,13 +12,40 @@
 // v = document.querySelector(".guess").value;
 // console.log(v);
 
+let number = Math.trunc(Math.random() * 20) + 1;
+document.querySelector(".number").textContent = "?";
+let score = 20;
+let highscore = 0;
+document.querySelector(".highscore").textContent = highscore;
+document.querySelector(".score").textContent = score;
+
 document.querySelector(".check").addEventListener("click", function () {
-  let v = document.querySelector(".guess").value;
+  let v = Number(document.querySelector(".guess").value);
   if (!v) {
     document.querySelector(".message").textContent =
       "Enter the value first\n and then submit😡";
+  } else if (v === number) {
+    //win
+    document.querySelector(".message").textContent = "well played.\You Win👑😉";
+    document.querySelector(".number").textContent = number;
+    if (highscore < score) {
+      highscore = score;
+      document.querySelector(".highscore").textContent = highscore;
+    }
+  } else if (v > number) {
+    document.querySelector(".message").textContent = "Too High😁";
+    score--;
   } else {
-    document.querySelector(".message").textContent = "well played.";
-    console.log(v);
+    document.querySelector(".message").textContent = "Too Low😁";
+    score--;
   }
+  document.querySelector(".score").textContent = score;
+});
+
+document.querySelector(".again").addEventListener("click", function () {
+  number = Math.trunc(Math.random() * 20) + 1;
+  document.querySelector(".number").textContent = "?";
+  score = 20;
+  document.querySelector(".score").textContent = score;
+  document.querySelector(".message").textContent = "Start Guessing...";
 });
