@@ -19,14 +19,17 @@ let highscore = 0;
 document.querySelector(".highscore").textContent = highscore;
 document.querySelector(".score").textContent = score;
 
+let displayMessage = (msg) => {
+  document.querySelector(".message").textContent = msg;
+};
+
 document.querySelector(".check").addEventListener("click", function () {
   let v = Number(document.querySelector(".guess").value);
   if (!v) {
-    document.querySelector(".message").textContent =
-      "Enter the value first\n and then submit😡";
+    displayMessage("Enter the value first\n and then submit😡");
   } else if (v === number) {
     //win
-    document.querySelector(".message").textContent = "well played.\You Win👑😉";
+    displayMessage("well played.\You Win👑😉");
     document.querySelector(".number").textContent = number;
     if (highscore < score) {
       highscore = score;
@@ -36,18 +39,11 @@ document.querySelector(".check").addEventListener("click", function () {
     //css
     document.querySelector("body").style.backgroundColor = "#60b343";
     document.querySelector(".number").style.width = "30rem";
-  } else if (v > number) {
+  } else if (v !== number) {
     if (score > 1) {
-      document.querySelector(".message").textContent = "Too High😁";
+      displayMessage(v > number ? "Too High😁" : "Too Low😁");
     } else {
-      document.querySelector(".message").textContent = "you loose the game.";
-    }
-    score--;
-  } else {
-    if (score > 1) {
-      document.querySelector(".message").textContent = "Too Low😁";
-    } else {
-      document.querySelector(".message").textContent = "you loose the game.";
+      displayMessage("you loose the game.");
     }
     score--;
   }
@@ -59,7 +55,7 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector(".number").textContent = "?";
   score = 20;
   document.querySelector(".score").textContent = score;
-  document.querySelector(".message").textContent = "Start Guessing...";
+  displayMessage("Start Guessing...");
 
   document.querySelector(".number").style.width = "15rem";
   document.querySelector("body").style.backgroundColor = "#222";
