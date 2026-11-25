@@ -33,10 +33,18 @@ document.querySelector(".check").addEventListener("click", function () {
       document.querySelector(".highscore").textContent = highscore;
     }
   } else if (v > number) {
-    document.querySelector(".message").textContent = "Too High😁";
+    if (score > 1) {
+      document.querySelector(".message").textContent = "Too High😁";
+    } else {
+      document.querySelector(".message").textContent = "you loose the game.";
+    }
     score--;
   } else {
-    document.querySelector(".message").textContent = "Too Low😁";
+    if (score > 1) {
+      document.querySelector(".message").textContent = "Too Low😁";
+    } else {
+      document.querySelector(".message").textContent = "you loose the game.";
+    }
     score--;
   }
   document.querySelector(".score").textContent = score;
